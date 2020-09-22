@@ -8,7 +8,7 @@ import java.io.*;
 
 public class HitServlet extends HttpServlet {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
+	public void doGet(HttpRequest request, HttpResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();

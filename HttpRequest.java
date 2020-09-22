@@ -29,35 +29,36 @@ public class HttpRequest {
 			String inputLine;
 			String allInputLines = "";
 
-//			while ((inputLine = this.in.readLine()) != null) {
-//				allInputLines += inputLine + " ";
-//			}
+			while ((inputLine = this.in.readLine()) != null && !inputLine.isEmpty()) {
+//				while ((inputLine = this.in.readLine()) != null) {
+				allInputLines += inputLine + " ";
+			}
 
 
 
-//			String[] inputs = allInputLines.split(" ");
-//
-//			System.out.println(inputs[0]);
-//
-//			for (int i = 0; i < inputs.length; i++) {
-//				if (inputs[i].equals("User-Agent:")) {
-//					i++;
-//					while (!inputs[i].equals("Accept:")) {
-//						this.userAgent += inputs[i] + " ";
-//						i++;
-//					}
-//					i = inputs.length;
-//				}
-//			}
-//			String browserURL = inputs[1];
-//			System.out.println(browserURL);
-//			this.path = browserURL.split("path=")[1];
-//			System.out.println(this.path);
-			// localhost:8081/?path=windows
-			// localhost:8081/hits/?path=windows
+			String[] inputs = allInputLines.split(" ");
+
+			System.out.println(inputs[0]);
+
+			for (int i = 0; i < inputs.length; i++) {
+				if (inputs[i].equals("User-Agent:")) {
+					i++;
+					while (!inputs[i].equals("Accept:")) {
+						this.userAgent += inputs[i] + " ";
+						i++;
+					}
+					i = inputs.length;
+				}
+			}
+			String browserURL = inputs[1];
+			System.out.println(browserURL);
+			this.path = browserURL.split("path=")[1];
+			System.out.println(this.path);
+//			 localhost:8081/?path=windows
+//			 localhost:8081/hits/?path=windows
 
 
-//			System.out.println(this.userAgent);
+			System.out.println(this.userAgent);
 
 //			in.close();
 //			this.socket.close();
