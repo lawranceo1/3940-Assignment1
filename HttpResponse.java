@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.PrintWriter;
 
 /**
@@ -23,25 +24,32 @@ public class HttpResponse {
 		this.out = out;
 	}
 
-	public void streamResults() {
+	public void streamResultsBrowser() {
 		try {
 			String method = "HTTP/1.1 200 ok";
 			this.out.println(method);
-			System.out.println("method");
-
 			this.out.println(this.contentType);
-			System.out.println("content");
-
 			this.out.println(this.body);
-			System.out.println("body");
-
-
-//			System.out.println("out");
-
 		} catch (Exception e) {
 			System.out.println("Exception in thread: " + Thread.currentThread().getId()+"\nMessage: "+e.getMessage()+"\n"
 					+ "Error in HttpResponse");
 
 		}
 	}
+
+	public void streamResultsClient() {
+		File dir = new File("c:\\windows");
+		String[] chld = dir.list();
+		if(chld == null){
+			this.out.println("Invalid Directory\n");
+		}else{
+			for(int i = 0; i < chld.length; i++){
+				String fileName = chld[i];
+				this.out.println(fileName+"\n");
+			}
+		}
+		System.out.println("Returning NOW");
+		return;
+	}
+
 }
