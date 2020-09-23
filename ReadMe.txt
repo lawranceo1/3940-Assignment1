@@ -18,7 +18,9 @@
 
  Implementation
 
- 1. Make sure the JDK is installed (Type the java -version on the command line) if you don't have, install the latest version of JDK 
+ 1. Make sure the JDK is installed (Type the java -version on the command line) if you don't have, install the latest version 
+ 
+ of JDK 
 
  URL:"https://www.oracle.com/java/technologies/javase-jdk11-downloads.html"
 
@@ -28,5 +30,7 @@
 
  4. Start the server (type the java Dirserver on the command line)
 
- 5. Go to the web browser and type "localhost:8081/?path=windows", it will return the list of the files in windows folder on the website.
+ 5. Go to the web browser and type "localhost:8081/?path=windows", it will return the list of the files in windows folder 
+ 
+ on the website.
 
