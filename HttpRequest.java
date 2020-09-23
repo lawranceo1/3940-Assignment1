@@ -47,12 +47,7 @@ public class HttpRequest {
 				}
 			}
 			String browserURL = inputs[1];
-			System.out.println(browserURL);
 			this.path = browserURL.split("=")[1];
-			System.out.println(this.path);
-
-			System.out.println(this.userAgent);
-
 
 		} catch (Exception e) {}
 	}

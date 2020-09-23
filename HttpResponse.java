@@ -48,7 +48,6 @@ public class HttpResponse {
 				this.out.println(fileName+"\n");
 			}
 		}
-		System.out.println("Returning NOW");
 		return;
 	}
 
