@@ -1,5 +1,5 @@
 Team member :
-Brain, Lawrance, Erica(Heeja Jung), Yongju Lee
+Brian, Lawrance, Erica(Heeja) Jeong, Yongju Lee
 
 
 
