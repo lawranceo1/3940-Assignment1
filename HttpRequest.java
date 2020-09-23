@@ -52,7 +52,7 @@ public class HttpRequest {
 			}
 			String browserURL = inputs[1];
 			System.out.println(browserURL);
-			this.path = browserURL.split("path=")[1];
+			this.path = browserURL.split("=")[1];
 			System.out.println(this.path);
 //			 localhost:8081/?path=windows
 //			 localhost:8081/hits/?path=windows
@@ -90,12 +90,5 @@ public class HttpRequest {
 			 + "This is from the close socket");
 		}
 	}
-
-//	public void test() {
-//		this.out.println("HTTP/1.1 200 ok\r\n");
-//		this.out.println("Content-Type: text/html\r\n\r\n");
-//		this.out.println("<li><button type=\"button\"> Hellllllllo   www</button></li>");
-//
-//	}
 
 }

@@ -17,8 +17,8 @@ public class DirServerThread extends Thread {
       	httpRequest.parseRequest();
 
 //      	httpRequest.test();
-//		DirServlet dirServlet = new DirServlet();
-//		dirServlet.doGet(httpRequest, httpResponse);
+		DirServlet dirServlet = new DirServlet();
+		dirServlet.doGet(httpRequest, httpResponse);
 
 	    httpResponse.setPrintWriter(httpRequest.getWriter());
 		httpResponse.streamResults();
