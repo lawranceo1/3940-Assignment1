@@ -26,9 +26,6 @@ public class DirServerThread extends Thread {
 	      }
       	httpRequest.closeSocket();
 
-
-
-
       } catch (Exception e) {
               System.out.println("Exception in thread: " + Thread.currentThread().getId()+"\nMessage: "+e.getMessage()+"\n"
               + "Error in the DirServerThread");

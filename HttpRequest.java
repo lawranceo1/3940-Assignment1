@@ -29,11 +29,7 @@ public class HttpRequest {
 				allInputLines += inputLine + " ";
 			}
 
-
-
 			String[] inputs = allInputLines.split(" ");
-
-			System.out.println(inputs[0]);
 
 			if (inputs[0].equals("c:\\windows")) {
 				this.browserRequest = false;
@@ -58,10 +54,7 @@ public class HttpRequest {
 			System.out.println(this.userAgent);
 
 
-		} catch (Exception e) {
-			System.out.println("Exception in thread: " + Thread.currentThread().getId()+"\nMessage: "+e.getMessage()+"\n"
-			+ "this is from the parseRequest");
-		}
+		} catch (Exception e) {}
 	}
 
 	public PrintWriter getWriter() throws IOException {

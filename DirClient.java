@@ -20,8 +20,6 @@ public class DirClient {
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             String fromServer = null;
-            // args[0] needs to changed
-//            out.println(args[0]);
             out.println(this.path);
             while ((fromServer = in.readLine()) != null) {
                 result += fromServer + "\n";

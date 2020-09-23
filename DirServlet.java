@@ -7,10 +7,8 @@ import java.io.*;
 
 public class DirServlet {
 
-	public void doGet(HttpRequest request, HttpResponse response)
-			 {
+	public void doGet(HttpRequest request, HttpResponse response) {
 		response.setContentType("text/html");
-//		PrintWriter out = response.getWriter();
 		String topPart = "<!DOCTYPE html><html><body><ul>";
 		String bottomPart = "</ul></body></html>";
 		response.setBody(topPart+getListing("C:\\" + request.getParameter())+bottomPart);
