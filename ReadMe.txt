@@ -1,29 +1,53 @@
-Team member :
-Brain, Lawrance, Erica(Heeja Jung), Yongju Lee
+ Team member :
+
+ Brain, Lawrance, Erica(Heeja Jung), Yongju Lee
 
 
-About the program:
-The program is developed to understatnd how to communcate between the server side and the client side.
-
+<<<<<<< HEAD
 To understand how the server side and client side works, we devided the program files which are the httpRequest and the httpResponse to run the file individually.
+=======
+ About the program:
+ 
+ The program is developed to understatnd how to communcate between the server side and the client side.
 
-Also, we created a multi-thread function which is allowed us to run the server with various users simultaneously.
+ To understand how the server side and client side works, we devided the program files which are the httpRequest 
+>>>>>>> edaa20af65bb5d495074b400c75d379b6834a70d
+
+ and the httpResponse to run the file individually.
+
+ Also, we created a multi-thread function which is allowed us to run the server with various users simultaneously.
 
 
 
-
+<<<<<<< HEAD
 Implementation:
+=======
+>>>>>>> edaa20af65bb5d495074b400c75d379b6834a70d
 
-1. Make sure the JDK is installed (Type the java -version on the command line) if you don't have, install the latest version of JDK 
+ Implementation
 
+<<<<<<< HEAD
   URL:"https://www.oracle.com/java/technologies/javase-jdk11-downloads.html"
 
 2. Go to command line and access the file(downloaded files path)
  Ex) cd C:\Users\dydwn\Documents\GitHub\3940-Assignment1
 
 3. Complie all of the java files ex) "Javac HttpResponse.java"
+=======
+ 1. Make sure the JDK is installed (Type the java -version on the command line) if you don't have, install the latest version 
+ 
+ of JDK 
 
-4. Start the server (type the java Dirserver on the command line)
+ URL:"https://www.oracle.com/java/technologies/javase-jdk11-downloads.html"
 
-5. Go to the web browser and type "localhost:8081/?path=windows", it will return the list of the files in windows folder on the website.
+ 2. Go to command line and access the file(downloaded files path) ex cd C:\Users\dydwn\Documents\GitHub\3940-Assignment1
+>>>>>>> edaa20af65bb5d495074b400c75d379b6834a70d
+
+ 3. Complie all of the java files ex "Javac HttpResponse.java"
+
+ 4. Start the server (type the java Dirserver on the command line)
+
+ 5. Go to the web browser and type "localhost:8081/?path=windows", it will return the list of the files in windows folder 
+ 
+ on the website.
 
